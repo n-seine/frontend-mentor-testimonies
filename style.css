@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS RESET
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  */
+/* OWN CODE STARTING HERE */
+/*  */
+
+:root {
+  --Very-dark-magenta: hsl(300, 43%, 22%);
+  --Soft-pink: hsl(333, 80%, 67%);
+  --Dark-grayish-magenta: hsl(303, 10%, 53%);
+  --Light-grayish-magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+
+  font-size: 15px;
+  background-color: var(--White);
+}
+
+main {
+  margin: 0 20px;
+}
+
+.attribution {
+  margin: 3rem auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h1 {
+  margin-top: 5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 0.8em;
+  text-align: center;
+  color: var(--Very-dark-magenta);
+  letter-spacing: -0.08rem;
+}
+
+h2 {
+  font-weight: 500;
+  color: var(--Dark-grayish-magenta);
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+
+.ratings-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 2rem;
+  gap: 1em;
+  width: 100%;
+}
+
+.rating {
+  background-color: var(--Light-grayish-magenta);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Very-dark-magenta);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: normal;
+}
+
+.stars-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 0.5rem;
+}
+
+.stars-container img {
+  width: 15px;
+  height: auto;
+}
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 2rem;
+  gap: 1em;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+.testimony-card {
+  background-color: var(--Very-dark-magenta);
+  color: var(--Light-grayish-magenta);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.testimony-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-items: start;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.testimony-header .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimony-header .name {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.testimony-header .status {
+  font-weight: 500;
+  color: var(--Soft-pink);
+}
+
+.testimony-body {
+  line-height: 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
